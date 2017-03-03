@@ -36,11 +36,7 @@ for ($i = 0; $i < INPUTLEN; ++$i) {
 $stime   = microtime(TRUE);
 $outputs = [];
 // 你的代码放这
-sort($inputs);
-foreach ($inputs as $input) {
-    list($name, $code) = str_split($input, 4);
-    $outputs[$name][] = $code;
-}
+
 
 // 答案验证
 $etime  = microtime(TRUE);
